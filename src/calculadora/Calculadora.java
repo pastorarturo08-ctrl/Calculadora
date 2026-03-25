@@ -9,6 +9,9 @@ public class Calculadora {
         Scanner teclado = new Scanner(System.in);
         String operacion;
         int resultado;
+        suma clasesuma = new suma();
+        resta claseresta = new resta();
+        multiplicacion clasemultiplicacion = new multiplicacion();
         System.out.println("Elige que operacion deseas realizar");
         System.out.println("SUMA - RESTA - MULTIPLICACION");
         operacion = teclado.nextLine();
@@ -22,12 +25,18 @@ public class Calculadora {
             
             if("suma".equals(texto)){
                 System.out.println("---------SUMA------------");
+                resultado = clasesuma.suma(a, b);
+                System.out.println("Resultado de la suma: "+resultado);
             }
             else if("resta".equals(texto)){
-                System.out.println("---------RESTA-----------");    
+                System.out.println("---------RESTA-----------");  
+                resultado = claseresta.resta(a, b);
+                System.out.println("Resultado de la resta: "+resultado);
             }
             else if("multiplicacion".equals(texto)){
                 System.out.println("---------MULTIPLICACION-----------");
+                resultado = clasemultiplicacion.multiplicacion(a, b);
+                System.out.println("Resultado de la multiplicacion: "+resultado);
             }
             else{
                 System.out.println("Lo siento pero nuestra calculadora no cuenta con esa operacion");}
