@@ -12,7 +12,6 @@ public class Calculadora {
         suma clasesuma = new suma();
         resta claseresta = new resta();
         multiplicacion clasemultiplicacion = new multiplicacion();
-        
         System.out.println("Elige que operacion deseas realizar");
         System.out.println("SUMA - RESTA - MULTIPLICACION");
         operacion = teclado.nextLine();
