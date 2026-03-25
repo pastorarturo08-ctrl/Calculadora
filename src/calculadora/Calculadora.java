@@ -32,12 +32,12 @@ public class Calculadora {
             else if("resta".equals(texto)){
                 System.out.println("---------RESTA-----------");  
                 resultado = claseresta.resta(a, b);
-                System.out.println("Resultado de la suma: " + resultado); 
+                System.out.println("Resultado de la resta: " + resultado); 
             }
             else if("multiplicacion".equals(texto)){
                 System.out.println("---------MULTIPLICACION-----------");
                 resultado = clasemultiplicacion.multiplicacion(a, b);
-                System.out.println("Resultado de la suma: " + resultado); 
+                System.out.println("Resultado de la multiplicacion: " + resultado); 
             }
             else{
                 System.out.println("Lo siento pero nuestra calculadora no cuenta con esa operacion");}
